@@ -1,1 +1,3 @@
-console.log('Test')
+import { firstLoad } from "./loadPage";
+
+firstLoad()
