@@ -1,6 +1,6 @@
-import buildHeader from "./header";
-import buildHome from "./home";
-
+import buildHeader from "./js/pages/header"
+import buildHome from "./js/pages/home";
+import css from "./styles/global.css"
 const content = document.querySelector('#content')
 
 export function firstLoad() {

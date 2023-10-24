@@ -1,0 +1,40 @@
+/* The hero image */
+#hero-img {
+  height: calc(100vh - 120px);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  color: white;
+}
+
+#hero-title{
+  font-size: 62px;
+}
+
+#hero-tagline{
+  font-size: 32px;
+}
+
+#menu-button{
+  margin-top: 40px;
+  
+  background: rgba(255, 255, 255, 0.048);
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(2px);
+  border: none;
+}
+
+#menu-button:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+}

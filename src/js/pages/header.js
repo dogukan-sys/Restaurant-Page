@@ -1,3 +1,5 @@
+import css from "../../styles/header.css"
+
 export default function buildHeader() {
   // Build HEADER
   const HEADER = document.createElement('div')
@@ -5,10 +7,10 @@ export default function buildHeader() {
   const HOME = document.createElement('button')
   const MENU = document.createElement('button')
   const ABOUT = document.createElement('button')
-  const TITLE = document.createElement('p') 
+  const TITLE = document.createElement('i') 
  
   TITLE.id = 'title'
-  TITLE.textContent = 'Turkish Temptations'
+  TITLE.dataset.lucide = 'coffee'
 
   HEADER.id = 'header'
   NAV.id = 'nav'

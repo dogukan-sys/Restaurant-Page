@@ -1,3 +1,5 @@
+import css from "../../styles/hero.css"
+
 export default function buildHome() {
   // Create Elements
   const heroImg = document.createElement('div')
