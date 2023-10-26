@@ -12,13 +12,23 @@
 }
 
 #content {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+  height: 100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
   
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  
+  background-size: cover;  
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+  gap: 100px;
 }
 
+
+
+@media screen and (max-width: 1500px) {
+  #content{
+    height: 100%;
+  }
+
+}

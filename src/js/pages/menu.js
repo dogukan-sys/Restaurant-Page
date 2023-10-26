@@ -1,23 +1,28 @@
+import css from '../../styles/menu.css'
+import borek from '../../img/borek.jpg'
+import simit from '../../img/simit.jpg'
+import pogaca from '../../img/pogaca.jpg'
+import baklava from '../../img/baklava.jpg'
 const bakerySelection = {
   Borek: {
     description: "Flaky pastries with savory fillings.",
-    imagePath: "path/to/borek-image.jpg"
+    imagePath: borek
   },
   Simit: {
     description: "Sesame-crusted bread rings.",
-    imagePath: "path/to/simit-image.jpg"
+    imagePath: simit
   },
   Pogaca: {
     description: "Soft mini bread rolls with various fillings.",
-    imagePath: "path/to/pogaca-image.jpg"
+    imagePath: pogaca
   },
   Baklava: {
     description: "Classic pastry with honey and nuts.",
-    imagePath: "path/to/baklava-image.jpg"
+    imagePath: baklava
   },
   Revani: {
     description: "Semolina cake with sweet syrup.",
-    imagePath: "path/to/revani-image.jpg"
+    imagePath: "../../img/"
   }
 };
 
@@ -49,8 +54,10 @@ const coffeItemNames = Object.keys(coffeeSelection);
 
 function buildMenu(){  
   const bakeryMenu = document.createElement('div')
+    bakeryMenu.id = 'food'
   const coffeeMenu = document.createElement('div')
-  
+    coffeeMenu.id = 'drink'
+
   for (const item of bakeryItemNames) {
     bakeryMenu.appendChild(createCard(item, bakerySelection[item].description, bakerySelection[item].imagePath))
   }
@@ -63,10 +70,10 @@ function buildMenu(){
   content.appendChild(coffeeMenu)
 }
 
-function createCard(img,title,description){
+function createCard(title,description, img){
   const card = document.createElement('div')
   const cardImg = document.createElement('img')
-  const cardTitle = document.createElement('h4')
+  const cardTitle = document.createElement('h2')
   const cardDescription = document.createElement('p')
 
   card.classList.add('card')

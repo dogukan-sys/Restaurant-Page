@@ -1,4 +1,6 @@
 import css from "../../styles/hero.css"
+import { loadPage } from "../functions/loadPage"
+
 
 export default function buildHome() {
   // Create Elements
@@ -15,6 +17,7 @@ export default function buildHome() {
   const menuBtn = document.createElement('button')
     menuBtn.id = 'menu-button'
     menuBtn.textContent = 'Explore Our Flavorful Menu'
+    menuBtn.onclick = loadPage
 
   // Append in right Order.
   heroText.appendChild(title)

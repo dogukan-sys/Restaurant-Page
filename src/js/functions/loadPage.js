@@ -3,6 +3,7 @@ import buildHome from "../pages/home";
 import build, { buildMenu } from "../pages/menu"
 
 
+
 const content = document.querySelector('#content')
 
 function firstLoad() {
@@ -17,6 +18,7 @@ function loadPage(event) {
   if (event.target.id ==  'home') {content.appendChild(buildHome())}
   if (event.target.id == 'menu') {buildMenu()}
   if (event.target.id == 'contact') {content.appendChild(buildHome())}
+  if (event.target.id == 'menu-button') { buildMenu()}
 }
 
 export {firstLoad, loadPage}
