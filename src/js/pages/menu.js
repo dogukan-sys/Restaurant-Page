@@ -3,6 +3,14 @@ import borek from '../../img/borek.jpg'
 import simit from '../../img/simit.jpg'
 import pogaca from '../../img/pogaca.jpg'
 import baklava from '../../img/baklava.jpg'
+import revani from '../../img/revani.jpg'
+import coffee from '../../img/coffee.jpg'
+import cappuccino from '../../img/cappuccino.jpg'
+import latte from '../../img/latte.jpg'
+import icedcoffee from '../../img/icedcoffee.jpg'
+import cay from '../../img/cay.jpg'
+
+
 const bakerySelection = {
   Borek: {
     description: "Flaky pastries with savory fillings.",
@@ -22,30 +30,30 @@ const bakerySelection = {
   },
   Revani: {
     description: "Semolina cake with sweet syrup.",
-    imagePath: "../../img/"
+    imagePath: revani
   }
 };
 
 const coffeeSelection = {
   TurkishCoffee: {
     description: "Rich and aromatic.",
-    imagePath: "path/to/turkish-coffee-image.jpg"
+    imagePath: coffee
   },
   Cappuccino: {
     description: "Espresso with milk foam.",
-    imagePath: "path/to/cappuccino-image.jpg"
+    imagePath: cappuccino
   },
   Latte: {
     description: "Espresso with steamed milk.",
-    imagePath: "path/to/latte-image.jpg"
+    imagePath: latte
   },
   IcedCoffee: {
     description: "Chilled coffee with syrups.",
-    imagePath: "path/to/iced-coffee-image.jpg"
+    imagePath: icedcoffee
   },
-  TurkishTea: {
+  TurkishTea: { 
     description: "Strong, black tea.",
-    imagePath: "path/to/turkish-tea-image.jpg"
+    imagePath: cay
   }
 };
 const bakeryItemNames = Object.keys(bakerySelection)
