@@ -60,7 +60,7 @@ const bakeryItemNames = Object.keys(bakerySelection)
 const coffeItemNames = Object.keys(coffeeSelection);
 
 
-function buildMenu(){  
+export default function buildMenu(){  
   const bakeryMenu = document.createElement('div')
     bakeryMenu.id = 'food'
   const coffeeMenu = document.createElement('div')
@@ -98,5 +98,3 @@ function createCard(title,description, img){
   card.appendChild(cardDescription)
   return card
 }
-
-export { buildMenu }
